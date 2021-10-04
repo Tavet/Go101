@@ -20,5 +20,5 @@ func main() {
 
 	// Brackets balance challenge
 	var brackets string = "(())()()((()))"
-	fmt.Printf("%s is %s", brackets, challenge.CheckBalance(brackets))
+	fmt.Printf("%s is %s", brackets, challenge.CheckBalance(&brackets))
 }
