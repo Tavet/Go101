@@ -20,5 +20,8 @@ func main() {
 
 	// Brackets balance challenge
 	var brackets string = "(())()()((()))"
-	fmt.Printf("%s is %s", brackets, challenge.CheckBalance(&brackets))
+	fmt.Printf("%s is %s\n", brackets, challenge.CheckBalance(&brackets))
+
+	// Season of a Month challenge
+	fmt.Printf("November is in %s season\n", challenge.Season(11))
 }
