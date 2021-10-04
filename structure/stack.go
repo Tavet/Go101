@@ -1,18 +1,18 @@
 package structure
 
-type Stack []string
+type Stack []rune
 
 func (s *Stack) IsEmpty() bool {
 	return len(*s) == 0
 }
 
-func (s *Stack) Push(item string) {
+func (s *Stack) Push(item rune) {
 	*s = append(*s, item)
 }
 
-func (s *Stack) Pop() (string, bool) {
+func (s *Stack) Pop() (rune, bool) {
 	if(s.IsEmpty()) {
-		return "", false
+		return 0, false
 	} else {
 		index := len(*s) - 1
 		element := (*s)[index]

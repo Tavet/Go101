@@ -12,13 +12,9 @@ const (
 
 func CheckBalance(t *string) string {
 	var stack structure.Stack
-	// remove trailing whitespaces
-	var brackets = []rune(strings.TrimSpace(*t))
-	// var stack []string
 
-	for i := 0; i < len(brackets); i++ {
-		var char string = string(brackets[i])
-		switch char {
+	for _, char := range strings.TrimSpace(*t) {
+		switch string(char) {
 		case "(":
 			stack.Push(char)
 			continue;

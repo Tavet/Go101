@@ -19,9 +19,11 @@ func main() {
 	fmt.Printf("Celsius: %f - Fahrenheit: %f\n", celsius, challenge.ToFahrenheit(celsius))
 
 	// Brackets balance challenge
-	var brackets string = "(())()()((()))"
+	var brackets string = "((test) He llo)()"
 	fmt.Printf("%s is %s\n", brackets, challenge.CheckBalance(&brackets))
 
 	// Season of a Month challenge
 	fmt.Printf("November is in %s season\n", challenge.Season(11))
+
+	
 }
