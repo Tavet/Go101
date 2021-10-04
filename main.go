@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/Tavet/Go101/challenge"
 )
 
@@ -16,5 +15,8 @@ const (
 
 func main() {
 	var celsius challenge.Celsius = 100
-	fmt.Printf("Celsius: %f - Fahrenheit: %f", celsius, challenge.ToFahrenheit(celsius))
+	fmt.Printf("Celsius: %f - Fahrenheit: %f\n", celsius, challenge.ToFahrenheit(celsius))
+
+	var brackets string = "((())"
+	fmt.Printf("%s is %s", brackets, challenge.CheckBalance(brackets))
 }
