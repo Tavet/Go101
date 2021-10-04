@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 	"github.com/Tavet/Go101/challenge"
 )
 
