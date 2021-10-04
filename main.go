@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"github.com/Tavet/Go101/challenge"
 )
 
@@ -14,16 +15,21 @@ const (
 )
 
 func main() {
-	// Conevrt celsius to fahrenheint
+	celsiusChallenge()
+	bracketsBalanceChallenge()
+	seasonChallenge()
+}
+
+func celsiusChallenge() {
 	var celsius challenge.Celsius = 100
 	fmt.Printf("Celsius: %f - Fahrenheit: %f\n", celsius, challenge.ToFahrenheit(celsius))
+}
 
-	// Brackets balance challenge
+func bracketsBalanceChallenge() {
 	var brackets string = "((test) He llo)()"
 	fmt.Printf("%s is %s\n", brackets, challenge.CheckBalance(&brackets))
+}
 
-	// Season of a Month challenge
+func seasonChallenge() {
 	fmt.Printf("November is in %s season\n", challenge.Season(11))
-
-	
 }
