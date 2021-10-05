@@ -17,6 +17,19 @@ func main() {
 	celsiusChallenge()
 	bracketsBalanceChallenge()
 	seasonChallenge()
+	recursionChallenge()
+	highOrderChallenge()
+}
+
+func highOrderChallenge() {
+	slice := [] int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	fmt.Printf("Even numbers: %d\n", challenge.Filter(slice, challenge.IsEven))
+	fmt.Printf("Odd numbers: %d\n", challenge.Filter(slice, challenge.IsOdd))
+}
+
+func recursionChallenge() {
+	var n uint64 = 10
+	fmt.Printf("%d factorial: %d\n", n, challenge.Factorial(n))
 }
 
 func celsiusChallenge() {
